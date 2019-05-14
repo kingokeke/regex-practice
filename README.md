@@ -1,0 +1,2 @@
+# regex-practice
+This practice problem requires extending the JavaScript String prototype object to contain custom string methods. The custom methods will be implemented using Regex patterns to internalise the knowledge of Regex patterns and methods in JavaScript. Principles of Prototype Oriented Programming and Test Driven Development will be used in this exercise, as well as fundamentals of writing clean code.
