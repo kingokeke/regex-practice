@@ -172,4 +172,8 @@ describe('String.prototype.inverseCase', function() {
 	it('should exist on the String prototype', function() {
 		expect('A random string').toHaveProperty('inverseCase');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.inverseCase()).not.toBeUndefined();
+	});
 });
