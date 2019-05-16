@@ -185,3 +185,10 @@ describe('String.prototype.inverseCase', function() {
 		expect('Mr. Ben'.inverseCase()).toBe('mR. bEN');
 	});
 });
+
+// TESTS ALTERNATINGCASE METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.alternatingCase', function() {
+	it('should exist on the String prototype', function() {
+		expect('A random string').toHaveProperty('alternatingCase');
+	});
+});
