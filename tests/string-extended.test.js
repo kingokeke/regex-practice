@@ -50,4 +50,8 @@ describe('String.prototype.toLower', function() {
 	it('should exist on the String prototype', function() {
 		expect('Ome random string').toHaveProperty('toLower');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.toLower()).not.toBeUndefined();
+	});
 });
