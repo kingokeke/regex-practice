@@ -214,4 +214,8 @@ describe('String.prototype.numberWords', function() {
 	it('should not return a response that is undefined', function() {
 		expect('325'.numberWords()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof '325'.numberWords()).toBe('string');
+	});
 });
