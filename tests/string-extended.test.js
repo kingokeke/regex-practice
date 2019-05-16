@@ -119,4 +119,8 @@ describe('String.prototype.words', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.words()).not.toBeUndefined();
 	});
+
+	it('should return an array', function() {
+		expect(Array.isArray('What a time to be alive'.words())).toBe(true);
+	});
 });
