@@ -218,4 +218,8 @@ describe('String.prototype.numberWords', function() {
 	it('should return a string', function() {
 		expect(typeof '325'.numberWords()).toBe('string');
 	});
+
+	it('should return the number in words instead of numerals', function() {
+		expect('325'.numberWords()).toBe('three two five');
+	});
 });
