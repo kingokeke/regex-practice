@@ -12,4 +12,8 @@ describe('String.prototype.hasVowels', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.hasVowels()).not.toBeUndefined();
 	});
+
+	it('should return a boolean', function() {
+		expect(typeof 'stringify'.hasVowels()).toBe('boolean');
+	});
 });
