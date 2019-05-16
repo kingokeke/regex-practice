@@ -16,4 +16,8 @@ describe('String.prototype.hasVowels', function() {
 	it('should return a boolean', function() {
 		expect(typeof 'stringify'.hasVowels()).toBe('boolean');
 	});
+
+	it('should return false when the method is called on a string that does not have vowels', function() {
+		expect('fly rhythms'.hasVowels()).toBeFalsy();
+	});
 });
