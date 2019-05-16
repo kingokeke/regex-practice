@@ -128,3 +128,10 @@ describe('String.prototype.words', function() {
 		expect('Annabel is here.'.words()).toEqual(['Annabel', 'is', 'here']);
 	});
 });
+
+// TESTS WORDCOUNT METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.wordCount', function() {
+	it('should exist on the String prototype', function() {
+		expect('A random string').toHaveProperty('wordCount');
+	});
+});
