@@ -123,4 +123,8 @@ describe('String.prototype.words', function() {
 	it('should return an array', function() {
 		expect(Array.isArray('What a time to be alive'.words())).toBe(true);
 	});
+
+	it('should return all the words in a string as elements of an array', function() {
+		expect('Annabel is here.'.words()).toEqual(['Annabel', 'is', 'here']);
+	});
 });
