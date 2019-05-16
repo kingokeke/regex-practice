@@ -109,3 +109,10 @@ describe('String.prototype.isQuestion', function() {
 		expect('Is Annabel here?'.isQuestion()).toBe(true);
 	});
 });
+
+// TESTS WORDS METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.words', function() {
+	it('should exist on the String prototype', function() {
+		expect('A random string').toHaveProperty('words');
+	});
+});
