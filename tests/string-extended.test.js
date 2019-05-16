@@ -161,4 +161,8 @@ describe('String.prototype.toCurrency', function() {
 	it('should not return a response that is undefined', function() {
 		expect('1111111.11'.toCurrency()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof '1111111.11'.toCurrency()).toBe('string');
+	});
 });
