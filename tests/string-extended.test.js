@@ -8,4 +8,8 @@ describe('String.prototype.hasVowels', function() {
 	it('should exist on the String prototype', function() {
 		expect('Ome random string').toHaveProperty('hasVowels');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.hasVowels()).not.toBeUndefined();
+	});
 });
