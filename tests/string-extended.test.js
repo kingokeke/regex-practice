@@ -205,9 +205,13 @@ describe('String.prototype.alternatingCase', function() {
 	});
 });
 
-// TESTS ALTERNATINGCASE METHOD ON THE STRING PROTOTYPE
+// TESTS NUMBERWORDS METHOD ON THE STRING PROTOTYPE
 describe('String.prototype.numberWords', function() {
 	it('should exist on the String prototype', function() {
 		expect('325').toHaveProperty('numberWords');
+	});
+
+	it('should not return a response that is undefined', function() {
+		expect('325'.numberWords()).not.toBeUndefined();
 	});
 });
