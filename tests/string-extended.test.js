@@ -25,3 +25,10 @@ describe('String.prototype.hasVowels', function() {
 		expect('master plan'.hasVowels()).toBeTruthy();
 	});
 });
+
+// TESTS TOUPPER METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.toUpper', function() {
+	it('should exist on the String prototype', function() {
+		expect('Ome random string').toHaveProperty('toUpper');
+	});
+});
