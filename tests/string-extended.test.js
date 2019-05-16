@@ -31,4 +31,8 @@ describe('String.prototype.toUpper', function() {
 	it('should exist on the String prototype', function() {
 		expect('Ome random string').toHaveProperty('toUpper');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.toUpper()).not.toBeUndefined();
+	});
 });
