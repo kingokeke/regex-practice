@@ -138,4 +138,8 @@ describe('String.prototype.wordCount', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.wordCount()).not.toBeUndefined();
 	});
+
+	it('should return a number', function() {
+		expect(typeof 'What a time to be alive'.wordCount()).toBe('number');
+	});
 });
