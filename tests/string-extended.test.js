@@ -69,4 +69,8 @@ describe('String.prototype.ucFirst', function() {
 	it('should exist on the String prototype', function() {
 		expect('A random string').toHaveProperty('ucFirst');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('a random string'.ucFirst()).not.toBeUndefined();
+	});
 });
