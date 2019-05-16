@@ -88,4 +88,8 @@ describe('String.prototype.isQuestion', function() {
 	it('should exist on the String prototype', function() {
 		expect('Ome random string').toHaveProperty('isQuestion');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.isQuestion()).not.toBeUndefined();
+	});
 });
