@@ -54,4 +54,8 @@ describe('String.prototype.toLower', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.toLower()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof 'stringify'.toLower()).toBe('string');
+	});
 });
