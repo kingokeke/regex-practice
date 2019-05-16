@@ -180,4 +180,8 @@ describe('String.prototype.inverseCase', function() {
 	it('should return a string', function() {
 		expect(typeof 'What a time to be alive'.inverseCase()).toBe('string');
 	});
+
+	it('should return inverted characters of a string', function() {
+		expect('Mr. Ben'.inverseCase()).toBe('mR. bEN');
+	});
 });
