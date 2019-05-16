@@ -73,4 +73,8 @@ describe('String.prototype.ucFirst', function() {
 	it('should not return a response that is undefined', function() {
 		expect('a random string'.ucFirst()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof 'a random string'.ucFirst()).toBe('string');
+	});
 });
