@@ -195,4 +195,8 @@ describe('String.prototype.alternatingCase', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.alternatingCase()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof 'Onomatopoeia'.alternatingCase()).toBe('string');
+	});
 });
