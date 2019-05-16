@@ -35,4 +35,8 @@ describe('String.prototype.toUpper', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.toUpper()).not.toBeUndefined();
 	});
+
+	it('should return a string', function() {
+		expect(typeof 'stringify'.toUpper()).toBe('string');
+	});
 });
