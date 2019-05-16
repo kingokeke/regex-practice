@@ -151,3 +151,10 @@ describe('String.prototype.wordCount', function() {
 		expect(''.wordCount()).toBe(0);
 	});
 });
+
+// TESTS TOCURRENCY METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.toCurrency', function() {
+	it('should exist on the String prototype', function() {
+		expect('1111111.11').toHaveProperty('toCurrency');
+	});
+});
