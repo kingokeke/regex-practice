@@ -20,4 +20,8 @@ describe('String.prototype.hasVowels', function() {
 	it('should return false when the method is called on a string that does not have vowels', function() {
 		expect('fly rhythms'.hasVowels()).toBeFalsy();
 	});
+
+	it('should return true when the method is called on a string that has vowels', function() {
+		expect('master plan'.hasVowels()).toBeTruthy();
+	});
 });
