@@ -44,3 +44,10 @@ describe('String.prototype.toUpper', function() {
 		expect('annabel is here'.toUpper()).toBe('ANNABEL IS HERE');
 	});
 });
+
+// TESTS TOLOWER METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.toLower', function() {
+	it('should exist on the String prototype', function() {
+		expect('Ome random string').toHaveProperty('toLower');
+	});
+});
