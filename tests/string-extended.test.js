@@ -96,4 +96,8 @@ describe('String.prototype.isQuestion', function() {
 	it('should return a boolean', function() {
 		expect(typeof 'stringify'.isQuestion()).toBe('boolean');
 	});
+
+	it('should return false for a string that is not a question', function() {
+		expect('Annabel is here.'.isQuestion()).toBe(false);
+	});
 });
