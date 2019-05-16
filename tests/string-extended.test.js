@@ -58,4 +58,8 @@ describe('String.prototype.toLower', function() {
 	it('should return a string', function() {
 		expect(typeof 'stringify'.toLower()).toBe('string');
 	});
+
+	it('should return a lower case string', function() {
+		expect('ANNABEL IS HERE'.toLower()).toBe('annabel is here');
+	});
 });
