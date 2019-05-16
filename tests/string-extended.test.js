@@ -142,4 +142,8 @@ describe('String.prototype.wordCount', function() {
 	it('should return a number', function() {
 		expect(typeof 'What a time to be alive'.wordCount()).toBe('number');
 	});
+
+	it('should return the number of words in a string', function() {
+		expect('What a time to be alive.'.wordCount()).toBe(6);
+	});
 });
