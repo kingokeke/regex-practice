@@ -191,4 +191,8 @@ describe('String.prototype.alternatingCase', function() {
 	it('should exist on the String prototype', function() {
 		expect('A random string').toHaveProperty('alternatingCase');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.alternatingCase()).not.toBeUndefined();
+	});
 });
