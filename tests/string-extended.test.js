@@ -82,3 +82,10 @@ describe('String.prototype.ucFirst', function() {
 		expect('another random string'.ucFirst()).toBe('Another random string');
 	});
 });
+
+// TESTS ISQUESTION METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.isQuestion', function() {
+	it('should exist on the String prototype', function() {
+		expect('Ome random string').toHaveProperty('isQuestion');
+	});
+});
