@@ -104,4 +104,8 @@ describe('String.prototype.isQuestion', function() {
 	it('should return false for a string that contains only a question mark', function() {
 		expect('?'.isQuestion()).toBe(false);
 	});
+
+	it('should return true for a string that is a question', function() {
+		expect('Is Annabel here?'.isQuestion()).toBe(true);
+	});
 });
