@@ -39,4 +39,8 @@ describe('String.prototype.toUpper', function() {
 	it('should return a string', function() {
 		expect(typeof 'stringify'.toUpper()).toBe('string');
 	});
+
+	it('should return an upper case string', function() {
+		expect('annabel is here'.toUpper()).toBe('ANNABEL IS HERE');
+	});
 });
