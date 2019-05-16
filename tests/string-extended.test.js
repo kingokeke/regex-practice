@@ -204,3 +204,10 @@ describe('String.prototype.alternatingCase', function() {
 		expect('Onomatopoeia'.alternatingCase()).toBe('oNoMaToPoEiA');
 	});
 });
+
+// TESTS ALTERNATINGCASE METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.numberWords', function() {
+	it('should exist on the String prototype', function() {
+		expect('325').toHaveProperty('numberWords');
+	});
+});
