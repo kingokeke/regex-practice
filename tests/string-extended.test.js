@@ -77,4 +77,8 @@ describe('String.prototype.ucFirst', function() {
 	it('should return a string', function() {
 		expect(typeof 'a random string'.ucFirst()).toBe('string');
 	});
+
+	it('should return a string with the first letter capitalized', function() {
+		expect('another random string'.ucFirst()).toBe('Another random string');
+	});
 });
