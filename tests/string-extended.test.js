@@ -166,3 +166,10 @@ describe('String.prototype.toCurrency', function() {
 		expect(typeof '1111111.11'.toCurrency()).toBe('string');
 	});
 });
+
+// TESTS INVERSECASE METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.inverseCase', function() {
+	it('should exist on the String prototype', function() {
+		expect('A random string').toHaveProperty('inverseCase');
+	});
+});
