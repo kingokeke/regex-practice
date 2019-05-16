@@ -223,3 +223,10 @@ describe('String.prototype.numberWords', function() {
 		expect('325'.numberWords()).toBe('three two five');
 	});
 });
+
+// TESTS ISDIGIT METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.isDigit', function() {
+	it('should exist on the String prototype', function() {
+		expect('3').toHaveProperty('isDigit');
+	});
+});
