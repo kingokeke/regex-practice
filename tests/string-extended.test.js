@@ -199,4 +199,8 @@ describe('String.prototype.alternatingCase', function() {
 	it('should return a string', function() {
 		expect(typeof 'Onomatopoeia'.alternatingCase()).toBe('string');
 	});
+
+	it('should return characters of a string in alternating case, starting with a small letter', function() {
+		expect('Onomatopoeia'.alternatingCase()).toBe('oNoMaToPoEiA');
+	});
 });
