@@ -134,4 +134,8 @@ describe('String.prototype.wordCount', function() {
 	it('should exist on the String prototype', function() {
 		expect('A random string').toHaveProperty('wordCount');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('A random string'.wordCount()).not.toBeUndefined();
+	});
 });
