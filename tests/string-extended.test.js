@@ -157,4 +157,8 @@ describe('String.prototype.toCurrency', function() {
 	it('should exist on the String prototype', function() {
 		expect('1111111.11').toHaveProperty('toCurrency');
 	});
+
+	it('should not return a response that is undefined', function() {
+		expect('1111111.11'.toCurrency()).not.toBeUndefined();
+	});
 });
