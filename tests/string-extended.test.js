@@ -63,3 +63,10 @@ describe('String.prototype.toLower', function() {
 		expect('ANNABEL IS HERE'.toLower()).toBe('annabel is here');
 	});
 });
+
+// TESTS UCFIRST METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.ucFirst', function() {
+	it('should exist on the String prototype', function() {
+		expect('A random string').toHaveProperty('ucFirst');
+	});
+});
