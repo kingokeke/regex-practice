@@ -92,4 +92,8 @@ describe('String.prototype.isQuestion', function() {
 	it('should not return a response that is undefined', function() {
 		expect('A random string'.isQuestion()).not.toBeUndefined();
 	});
+
+	it('should return a boolean', function() {
+		expect(typeof 'stringify'.isQuestion()).toBe('boolean');
+	});
 });
