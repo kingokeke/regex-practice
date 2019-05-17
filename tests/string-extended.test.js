@@ -233,4 +233,8 @@ describe('String.prototype.isDigit', function() {
 	it('should not return a response that is undefined', function() {
 		expect('3'.isDigit()).not.toBeUndefined();
 	});
+
+	it('should return a boolean response', function() {
+		expect(typeof '3'.isDigit()).toBe('boolean');
+	});
 });
