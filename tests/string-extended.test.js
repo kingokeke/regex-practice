@@ -171,6 +171,13 @@ describe('String.prototype.toCurrency', function() {
 	});
 });
 
+// TESTS FROMCURRENCY METHOD ON THE STRING PROTOTYPE
+describe('String.prototype.fromCurrency', function() {
+	it('should exist on the String prototype', function() {
+		expect('1111111.11').toHaveProperty('fromCurrency');
+	});
+});
+
 // TESTS INVERSECASE METHOD ON THE STRING PROTOTYPE
 describe('String.prototype.inverseCase', function() {
 	it('should exist on the String prototype', function() {
