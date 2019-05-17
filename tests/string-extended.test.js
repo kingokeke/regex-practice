@@ -166,9 +166,9 @@ describe('String.prototype.toCurrency', function() {
 		expect(typeof '1111111.11'.toCurrency()).toBe('string');
 	});
 
-	// it('should return a number in currency format', function() {
-	// 	expect('1111111.11'.toCurrency()).toBe('1,111,111.11');
-	// });
+	it('should return a number in currency format', function() {
+		expect('1111111.11'.toCurrency()).toBe('1,111,111.11');
+	});
 });
 
 // TESTS FROMCURRENCY METHOD ON THE STRING PROTOTYPE
