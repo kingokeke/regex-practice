@@ -242,6 +242,10 @@ describe('String.prototype.isDigit', function() {
 		expect('325'.isDigit()).toBe(false);
 	});
 
+	it('should return false for an empty string', function() {
+		expect(''.isDigit()).toBe(false);
+	});
+
 	it('should return true for a digit number', function() {
 		expect('3'.isDigit()).toBe(true);
 	});
