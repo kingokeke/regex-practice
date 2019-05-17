@@ -184,6 +184,10 @@ describe('String.prototype.fromCurrency', function() {
 	it('should return a string', function() {
 		expect(typeof '1,111,111.11'.fromCurrency()).toBe('string');
 	});
+
+	it('should return a number in normal number format, without commas', function() {
+		expect('1,111,111.11'.toCurrency()).toBe('1111111.11');
+	});
 });
 
 // TESTS INVERSECASE METHOD ON THE STRING PROTOTYPE
