@@ -174,11 +174,15 @@ describe('String.prototype.toCurrency', function() {
 // TESTS FROMCURRENCY METHOD ON THE STRING PROTOTYPE
 describe('String.prototype.fromCurrency', function() {
 	it('should exist on the String prototype', function() {
-		expect('1111111.11').toHaveProperty('fromCurrency');
+		expect('1,111,111.11').toHaveProperty('fromCurrency');
 	});
 
 	it('should not return a response that is undefined', function() {
 		expect('1,111,111.11'.fromCurrency()).not.toBeUndefined();
+	});
+
+	it('should return a string', function() {
+		expect(typeof '1,111,111.11'.fromCurrency()).toBe('string');
 	});
 });
 
