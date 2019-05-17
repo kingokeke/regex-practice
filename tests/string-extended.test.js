@@ -237,4 +237,8 @@ describe('String.prototype.isDigit', function() {
 	it('should return a boolean response', function() {
 		expect(typeof '3'.isDigit()).toBe('boolean');
 	});
+
+	it('should return false for a non-digit number', function() {
+		expect('325'.isDigit()).toBe(false);
+	});
 });
