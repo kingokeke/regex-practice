@@ -165,6 +165,10 @@ describe('String.prototype.toCurrency', function() {
 	it('should return a string', function() {
 		expect(typeof '1111111.11'.toCurrency()).toBe('string');
 	});
+
+	it('should return a number in currency format', function() {
+		expect('1111111.11'.toCurrency()).toBe('1,111,111.11');
+	});
 });
 
 // TESTS INVERSECASE METHOD ON THE STRING PROTOTYPE
