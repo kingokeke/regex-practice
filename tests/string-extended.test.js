@@ -127,6 +127,10 @@ describe('String.prototype.words', function() {
 	it('should return all the words in a string as elements of an array', function() {
 		expect('Annabel is here.'.words()).toEqual(['Annabel', 'is', 'here']);
 	});
+
+	it('should return an empty array for an empty string', function() {
+		expect(''.words()).toEqual([]);
+	});
 });
 
 // TESTS WORDCOUNT METHOD ON THE STRING PROTOTYPE
