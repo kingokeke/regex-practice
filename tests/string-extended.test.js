@@ -131,6 +131,10 @@ describe('String.prototype.words', function() {
 	it('should return an empty array for an empty string', function() {
 		expect(''.words()).toEqual([]);
 	});
+
+	it('should return an empty array for a string with no word characters', function() {
+		expect('         '.words()).toEqual([]);
+	});
 });
 
 // TESTS WORDCOUNT METHOD ON THE STRING PROTOTYPE
