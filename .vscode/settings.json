@@ -1,0 +1,5 @@
+{
+  "html.format.wrapLineLength": 80,
+  "editor.wordWrap": "wordWrapColumn",
+  "prettier.eslintIntegration": true
+}
