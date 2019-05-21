@@ -1,0 +1,30 @@
+{
+	"name": "regex-practice",
+	"version": "1.0.0",
+	"description": "This practice problem requires extending the JavaScript String prototype object to contain custom string methods. The custom methods will be implemented using Regex patterns to internalise the knowledge of Regex patterns and methods in JavaScript. Principles of Prototype Oriented Programming and Test Driven Development will be used in this exercise, as well as fundamentals of writing clean code.",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest --coverage --watchAll"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kingokeke/regex-practice.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kingokeke/regex-practice/issues"
+	},
+	"homepage": "https://github.com/kingokeke/regex-practice#readme",
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-airbnb-base": "^13.1.0",
+		"eslint-plugin-import": "^2.17.2",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-react": "^7.13.0",
+		"jest": "^24.8.0"
+	},
+	"dependencies": {}
+}
